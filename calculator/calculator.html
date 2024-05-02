@@ -1,0 +1,54 @@
+<template>
+<!-- Calculator Body -->
+<div class="calc-body">
+
+    <!-- Calculator Display Screen -->
+    <div class="calc-screen">
+        <div class="calc-operation">{numberTyped} </div>
+        <div class="calc-typed">{total}</div>
+    </div>
+    
+    <!-- Calculator Buttons -->
+    <div class="calc-button-row">
+        <button name="allClear" onclick={handleAllClear} class="ac">AC</button>
+
+        <button name="clearEntry" class="opt">CE</button>
+
+        <button name="percentage" value={percentage} onclick={handleNumberClick} class="opt">&#37;</button>
+
+        <button name="division" value={division} onclick={handleNumberClick} class="opt">&#247;</button>
+
+        <button name="seven" value={seven} onclick={handleNumberClick}>7</button>
+
+        <button name="eight" value={eight} onclick={handleNumberClick}>8</button>
+
+        <button name="nien" value={nine} onclick={handleNumberClick}>9</button>
+
+        <button name="multiply" value={multiply} onclick={handleNumberClick}  class="opt">&#215;</button>
+
+        <button name="four" value={four} onclick={handleNumberClick}>4</button>
+
+        <button name="five" value={five} onclick={handleNumberClick}>5</button>
+
+        <button name="six" value={six} onclick={handleNumberClick}>6</button>
+
+        <button name="substract" value={substract} onclick={handleNumberClick} class="opt">&#8722;</button>
+
+        <button name="one" value={one} onclick={handleNumberClick}>1</button>
+
+        <button name="two" value={two} onclick={handleNumberClick}>2</button>
+
+        <button name="three" value={three} onclick={handleNumberClick}>3</button>
+
+        <button name="addition" value={addition} onclick={handleNumberClick} class="opt">&#43;</button>
+
+        <button name="zero" value={zero} onclick={handleNumberClick}>0</button>
+
+        <button name="dot" value={dot} onclick={handleNumberClick} >.</button>
+
+        <button name="clearSingleNumber">&#9003;</button>
+
+        <button name="equalto" onclick={handleClickEqualTo} class="opt">&#61;</button>
+    </div>
+    </div>
+</template>
